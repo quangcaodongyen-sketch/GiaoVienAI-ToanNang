@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cổng Thông Tin Giáo Viên AI Toàn Năng - Thầy Đinh Văn Thành</title>
+  <meta http-equiv="refresh" content="0; url=https://giao-vien-ai-toan-nang3.vercel.app/">
+  <script>
+    // Giữ nguyên toàn bộ tham số tìm kiếm (?...) và tab (#...) khi chuyển hướng
+    const targetUrl = 'https://giao-vien-ai-toan-nang3.vercel.app/' + window.location.search + window.location.hash;
+    window.location.replace(targetUrl);
+  </script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #090d16;
+      color: #e2e8f0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    .card {
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      padding: 40px;
+      border-radius: 24px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+      max-width: 480px;
+      margin: 20px;
+    }
+    .spinner {
+      width: 48px;
+      height: 48px;
+      border: 4px solid rgba(59, 130, 246, 0.2);
+      border-top-color: #38bdf8;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 20px;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    h1 {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 8px;
+      background: linear-gradient(135deg, #60a5fa, #38bdf8, #a855f7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p {
+      font-size: 13px;
+      color: #94a3b8;
+      margin-bottom: 24px;
+    }
+    .btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: #ffffff;
+      padding: 12px 28px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+      box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+      transition: all 0.2s;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(37, 99, 235, 0.6);
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="spinner"></div>
+    <h1>GIÁO VIÊN AI TOÀN NĂNG</h1>
+    <p>Đang tự động chuyển tiếp đến Cổng thông tin chính thức...</p>
+    <a href="https://giao-vien-ai-toan-nang3.vercel.app/" class="btn">Bấm Vào Đây Nếu Chưa Tự Chuyển</a>
+  </div>
+</body>
+</html>
