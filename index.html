@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cổng Thông Tin Giáo Viên AI Toàn Năng - Thầy Đinh Văn Thành</title>
+  <title>Dạy Học Số - Thầy Đinh Văn Thành (THCS Đồng Yên)</title>
   <meta http-equiv="refresh" content="0; url=https://giao-vien-ai-toan-nang3.vercel.app/">
   <script>
-    // Giữ nguyên toàn bộ tham số tìm kiếm (?...) và tab (#...) khi chuyển hướng
+    // Giữ nguyên toàn bộ tham số tìm kiếm (?...) và mã tab (#...) khi chuyển tiếp
     const targetUrl = 'https://giao-vien-ai-toan-nang3.vercel.app/' + window.location.search + window.location.hash;
     window.location.replace(targetUrl);
   </script>
   <style>
+    * { box-sizing: border-box; }
     body {
       margin: 0;
       padding: 0;
@@ -24,63 +25,73 @@
       text-align: center;
     }
     .card {
-      background: rgba(15, 23, 42, 0.8);
-      border: 1px solid rgba(59, 130, 246, 0.3);
-      padding: 40px;
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      padding: 40px 32px;
       border-radius: 24px;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-      max-width: 480px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6);
+      max-width: 500px;
       margin: 20px;
+      backdrop-filter: blur(16px);
     }
     .spinner {
-      width: 48px;
-      height: 48px;
-      border: 4px solid rgba(59, 130, 246, 0.2);
+      width: 52px;
+      height: 52px;
+      border: 4px solid rgba(56, 189, 248, 0.15);
       border-top-color: #38bdf8;
       border-radius: 50%;
-      animation: spin 1s linear infinite;
+      animation: spin 0.8s linear infinite;
       margin: 0 auto 20px;
     }
     @keyframes spin {
       to { transform: rotate(360deg); }
     }
     h1 {
-      font-size: 20px;
-      font-weight: 800;
-      margin-bottom: 8px;
-      background: linear-gradient(135deg, #60a5fa, #38bdf8, #a855f7);
+      font-size: 22px;
+      font-weight: 900;
+      margin: 0 0 8px 0;
+      background: linear-gradient(135deg, #38bdf8, #60a5fa, #c084fc);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      letter-spacing: 0.5px;
+    }
+    .author {
+      font-size: 13px;
+      color: #93c5fd;
+      margin-bottom: 6px;
+      font-weight: 600;
     }
     p {
       font-size: 13px;
       color: #94a3b8;
-      margin-bottom: 24px;
+      margin: 0 0 24px 0;
+      line-height: 1.5;
     }
     .btn {
       display: inline-block;
-      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      background: linear-gradient(135deg, #0284c7, #2563eb);
       color: #ffffff;
       padding: 12px 28px;
       border-radius: 12px;
       font-weight: 700;
       font-size: 14px;
       text-decoration: none;
-      box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+      box-shadow: 0 10px 25px rgba(2, 132, 199, 0.4);
       transition: all 0.2s;
     }
     .btn:hover {
       transform: translateY(-2px);
-      box-shadow: 0 14px 30px rgba(37, 99, 235, 0.6);
+      box-shadow: 0 14px 30px rgba(2, 132, 199, 0.6);
     }
   </style>
 </head>
 <body>
   <div class="card">
     <div class="spinner"></div>
-    <h1>GIÁO VIÊN AI TOÀN NĂNG</h1>
-    <p>Đang tự động chuyển tiếp đến Cổng thông tin chính thức...</p>
-    <a href="https://giao-vien-ai-toan-nang3.vercel.app/" class="btn">Bấm Vào Đây Nếu Chưa Tự Chuyển</a>
+    <h1>DẠY HỌC SỐ</h1>
+    <div class="author">Thầy giáo Đinh Văn Thành • THCS Đồng Yên</div>
+    <p>Đang tự động chuyển tiếp đến Cổng thông tin Giáo Viên AI Toàn Năng...</p>
+    <a href="https://giao-vien-ai-toan-nang3.vercel.app/" class="btn">Bấm Vào Đây Để Vào Ngay</a>
   </div>
 </body>
 </html>
